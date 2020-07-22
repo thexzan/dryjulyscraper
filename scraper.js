@@ -10,8 +10,8 @@ const scraper = {
 
     const time = moment().format("MMM DD, HH:mm:ss");
 
-    let people = $("div.user-stat").remove().text().trim().split("\n")[0];
-    let total = $("div.total-stat").remove().text().trim().split("\n")[0];
+    let people = $("div.user-stat").text().trim().split("\n")[0];
+    let total = $("div.total-stat").text().trim().split("\n")[0];
 
     let result = { time, people, total };
     return result;
